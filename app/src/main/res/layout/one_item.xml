@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/priority_one"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_margin="25dp"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/note_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Note"
+            android:textSize="18dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxLength="30" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200"
+            android:textSize="20sp"
+            android:id="@+id/amount_one"
+            android:layout_below="@+id/note_one"
+             android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01 February 2023"
+            android:textColor="@color/black"
+            android:layout_below="@+id/amount_one"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
